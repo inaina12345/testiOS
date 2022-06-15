@@ -19,5 +19,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          version=`curl -H 'Cache-Control: no-cache, no-store' https://itunes.apple.com/lookup?id=452916601&?foo=1 | jq -r ".results[].version"`
+          version=`curl -H 'Cache-Control: no-cache, no-store' https://itunes.apple.com/lookup?id=452916601&foo=1 | jq -r ".results[].version"`
           echo "$version"&?foo=1
